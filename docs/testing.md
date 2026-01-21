@@ -17,6 +17,10 @@ The **XCBuddy Tests** tool window displays:
 - Failure messages and locations
 - Test duration
 
+The layout adapts to window size:
+- **Wide window**: Test list on left, log output on right
+- **Narrow window**: Test list on top, log output below
+
 Click failed tests to navigate to the test source.
 
 ## Test Targets

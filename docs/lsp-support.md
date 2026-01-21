@@ -45,6 +45,15 @@ The LSP status appears in the bottom status bar:
 - **Connecting** - LSP is starting up
 - **Error** - Connection failed (click for details)
 
+## Toolchain Selection
+
+When a Swift SDK is configured as the project SDK, XCBuddy uses that toolchain's `sourcekit-lsp`:
+
+1. **Project SDK** - Uses `{toolchain}/usr/bin/sourcekit-lsp`
+2. **Fallback** - System `sourcekit-lsp` from PATH
+
+This enables using different Swift versions per project. See [Setup > Swift Toolchain SDK](setup.md#swift-toolchain-sdk).
+
 ## Troubleshooting
 
 ### LSP Not Connecting
@@ -61,6 +70,8 @@ The LSP status appears in the bottom status bar:
 
 3. Try building the project first:
    **XCBuddy > Build for Indexing**
+
+4. If using a custom toolchain, ensure it's set as the project SDK
 
 ### No Completions
 

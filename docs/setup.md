@@ -47,10 +47,33 @@ Open a folder containing `Package.swift`. XCBuddy detects the package and enable
 2. **Wait for LSP** - The status bar shows LSP connection state
 3. **Select a Target** - Use the XCBuddy Targets tool window to filter files
 
+## Swift Toolchain SDK
+
+XCBuddy registers Swift toolchains as proper IntelliJ SDKs, enabling per-project toolchain selection.
+
+### Adding a Swift SDK
+
+1. Open **File > Project Structure > SDKs**
+2. Click **+** and select **Swift Toolchain**
+3. Select a `.xctoolchain` directory (Xcode default is auto-suggested)
+4. The SDK is configured with version info and sourcekit-lsp path
+
+### Detected Toolchain Locations
+
+- `/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain`
+- `/Library/Developer/Toolchains/*.xctoolchain`
+- `~/Library/Developer/Toolchains/*.xctoolchain`
+
+### Setting Project SDK
+
+1. Open **File > Project Structure > Project**
+2. Select a registered Swift toolchain from the SDK dropdown
+3. SourceKit-LSP will use this toolchain's `sourcekit-lsp` binary
+
 ## Settings
 
 Configure XCBuddy via **Settings > Tools > XCBuddy**:
 
-- SDK path configuration
 - Build settings
-- LSP options
+- Signing configuration
+- Device preferences

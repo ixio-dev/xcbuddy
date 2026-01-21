@@ -46,6 +46,10 @@ The **XCBuddy Build** tool window shows:
 - Compiler errors and warnings with file links
 - Build duration
 
+The layout adapts to window size:
+- **Wide window**: Issue list on left, console output on right
+- **Narrow window**: Issue list on top, console output below
+
 Click error messages to jump to the source location.
 
 ## Device Selection

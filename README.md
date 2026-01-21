@@ -5,11 +5,13 @@ XCBuddy is an IntelliJ Platform plugin that brings Swift and Xcode project suppo
 ## Features
 
 - **Code Intelligence** - Completion, go-to-definition, find usages, hover docs via SourceKit-LSP
+- **Swift Toolchain SDK** - Register and manage Swift toolchains as project SDKs
 - **Syntax Highlighting** - Swift, .pbxproj, .plist, .entitlements, .xcstrings files
 - **Build & Run** - Build, run, and test Xcode projects directly from the IDE
 - **Target Selection** - Filter project view by Xcode target
 - **Device Management** - Select simulators and devices for running your app
 - **Swift Packages** - View and manage SPM dependencies
+- **Sparkle Integration** - Add auto-update support to macOS apps
 - **Apple Documentation** - Quick access to Apple Developer docs
 
 ## Documentation

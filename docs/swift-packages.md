@@ -31,6 +31,39 @@ When dependencies change:
 2. Build the project to update the index
 3. Code intelligence updates with new APIs
 
+## Adding Sparkle Framework
+
+XCBuddy can automatically add the Sparkle auto-update framework to macOS apps.
+
+### Via Menu
+
+**XCBuddy > Add Sparkle Framework**
+
+This adds:
+- Package dependency to `Package.swift` or Xcode project
+- Target dependency to executable targets
+
+### What Gets Added
+
+For `Package.swift` projects:
+
+```swift
+// In dependencies:
+.package(
+    url: "https://github.com/sparkle-project/Sparkle",
+    .upToNextMajor(from: "2.6.0")
+)
+
+// In executableTarget dependencies:
+.product(name: "Sparkle", package: "Sparkle")
+```
+
+### Next Steps After Adding
+
+1. Add `SUFeedURL` to your `Info.plist`
+2. Generate signing keys with Sparkle's `generate_keys` tool
+3. Disable App Sandbox in entitlements (or configure network exceptions)
+
 ## Troubleshooting
 
 ### Missing Package Completions
