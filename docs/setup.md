@@ -74,6 +74,36 @@ XCBuddy registers Swift toolchains as proper IntelliJ SDKs, enabling per-project
 
 Configure XCBuddy via **Settings > Tools > XCBuddy**:
 
-- Build settings
-- Signing configuration
-- Device preferences
+### Toolchain
+
+- Swift toolchain path
+- Custom `sourcekit-lsp` path (overrides toolchain default)
+
+### Devices
+
+- Default device/simulator selection
+- Platform preferences
+
+### Signing
+
+- Default signing identity
+- Automatic vs manual signing
+- See [Signing](signing.md) for details
+
+### Release
+
+- Create DMG by default
+- Git tag format
+
+### TestFlight
+
+- App Store Connect API Key ID
+- Issuer ID
+- API Key file path (.p8)
+- See [TestFlight](testflight.md) for setup
+
+## See Also
+
+- [Code Intelligence](lsp-support.md) - LSP features
+- [Building & Running](building.md) - Build commands
+- [Signing](signing.md) - Certificate management

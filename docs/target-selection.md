@@ -42,3 +42,8 @@ Right-click a file > **Show Target Membership** to see all targets containing th
 - **Large projects** - Focus on your current feature's target
 - **Multi-target apps** - Distinguish between main app and extensions
 - **Shared code** - See which files are shared across targets
+
+## See Also
+
+- [Building](building.md) - Build selected target
+- [Testing](testing.md) - Test target selection

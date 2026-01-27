@@ -82,3 +82,8 @@ SourceKit-LSP requires build index data. Run **Build for Indexing** to generate 
 After major changes, clean and rebuild:
 1. **XCBuddy > Clean Derived Data**
 2. **XCBuddy > Build for Indexing**
+
+## See Also
+
+- [Setup](setup.md) - Toolchain configuration
+- [Building](building.md) - Build commands

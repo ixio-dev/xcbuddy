@@ -9,8 +9,12 @@ XCBuddy is an IntelliJ Platform plugin that brings Swift and Xcode project suppo
 - **Syntax Highlighting** - Swift, .pbxproj, .plist, .entitlements, .xcstrings files
 - **Build & Run** - Build, run, and test Xcode projects directly from the IDE
 - **Target Selection** - Filter project view by Xcode target
-- **Device Management** - Select simulators and devices for running your app
+- **Device Management** - Simulator control, screenshots, screen recording
 - **Swift Packages** - View and manage SPM dependencies
+- **Signing & Certificates** - View certificates and provisioning profiles
+- **Release Distribution** - Archive, notarize, and create DMG for macOS apps
+- **TestFlight Upload** - Archive and upload iOS/tvOS/watchOS/visionOS apps
+- **Deploy to Applications** - Quick local deployment for macOS apps
 - **Sparkle Integration** - Add auto-update support to macOS apps
 - **Apple Documentation** - Quick access to Apple Developer docs
 
@@ -23,7 +27,12 @@ XCBuddy is an IntelliJ Platform plugin that brings Swift and Xcode project suppo
 | [Building & Running](docs/building.md) | Build, run, and clean commands |
 | [Testing](docs/testing.md) | Running unit tests |
 | [Target Selection](docs/target-selection.md) | Filtering by Xcode target |
+| [Device Management](docs/devices.md) | Simulators and device control |
 | [Swift Packages](docs/swift-packages.md) | SPM integration |
+| [Signing](docs/signing.md) | Certificates and provisioning profiles |
+| [Releasing](docs/releasing.md) | Archive, notarize, and distribute macOS apps |
+| [TestFlight](docs/testflight.md) | Upload to TestFlight |
+| [Sparkle](docs/sparkle.md) | Auto-update framework integration |
 
 ## Quick Start
 

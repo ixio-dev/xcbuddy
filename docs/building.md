@@ -65,8 +65,25 @@ The selected device is used for **Run** commands.
 
 Projects with multiple schemes show a scheme selector. Select the scheme before building to target specific configurations.
 
+## Deploy to Applications (macOS)
+
+**XCBuddy > Deploy to Applications**
+
+For macOS apps, quickly builds and copies to `/Applications`:
+1. Builds in Release configuration
+2. Copies the `.app` to `/Applications`
+3. Notifies on completion
+
+Useful for testing locally before full [release distribution](releasing.md).
+
 ## Open in Xcode
 
 **XCBuddy > Open in Xcode** or right-click menu
 
 Opens the project in Xcode for tasks requiring the full Xcode IDE.
+
+## See Also
+
+- [Device Management](devices.md) - Selecting devices for Run
+- [Releasing](releasing.md) - Archive and distribute macOS apps
+- [TestFlight](testflight.md) - Upload iOS apps
